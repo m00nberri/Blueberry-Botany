@@ -2,6 +2,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    size: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .header img {
@@ -19,6 +22,18 @@ body {
     align-items: center;
     padding: 1em 10%;
     justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.logo div {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
 }
 
 .header .nav {
@@ -44,17 +59,20 @@ a {
 
 .section {
     display: flex;
-    padding: 1em 10%;
+    padding: 5% 10%;
+    border-bottom: 1px dashed #41b3a3;
 }
 
 .container {
-    border: solid .3em #41b3a3;
+    border: solid 4px #41b3a3;
     border-radius: 1em;
     padding: 1em;
 }
 
 .info.container {
     flex-direction: column;
+    width: 30em;
+    flex-shrink: 0;
 }
 
 .section.head {
@@ -62,16 +80,107 @@ a {
     color: white;
     align-items: center;
     justify-content: space-between;
-    gap: 20%;
+    gap: 10%;
+}
+
+.head button {
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: .5em;
+    border: .2em solid #e27d60;
+    padding: .4em .7em;
+    margin-top: .5em;
+    color: #e27d60;
+    font: inherit;
+	cursor: pointer;
+    background: transparent;
+    text-align: center;
+}
+
+.head button:hover {
+    background: #e27d60;
+    color: white;
 }
 
 .h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bolder;
 }
 
 .s1 {
     font-size: 18px;
+}
+
+.section.column {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.items.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 20%;
+}
+
+.items img {
+    width: 8em;
+    height: 8em;
+    border: .2em solid #c38d9e;
+    border-radius: 1em;
+}
+
+.items div {
+    text-align: center;
+}
+
+.h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: -1.2em;
+}
+
+.testimonial {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.testimonial div {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: end;
+}
+
+.subbox.container {
+    border: solid #e27d60;
+    width: 100%;
+    background: #e27d60;
+}
+
+.subbox button {
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: .5em;
+    border: 2px solid white;
+    padding: .4em .7em;
+    margin-top: .5em;
+    color: white;
+    font: inherit;
+	cursor: pointer;
+    background: transparent;
+    text-align: center;
+}
+
+.subbox button:hover {
+    background: white;
+    color: #e27d60;
 }
 
 .section.light {
@@ -85,5 +194,8 @@ a {
 } */
 
 .footer {
-    background-color: #30524c;
+    background-color: #41b3a3;
+    text-align: center;
+    color: white;
+    padding: 1em;
 }
